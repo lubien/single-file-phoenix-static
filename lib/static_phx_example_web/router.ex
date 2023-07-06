@@ -18,6 +18,7 @@ defmodule StaticPhxExampleWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/other", PageController, :home
   end
 
   # Other scopes may use custom stacks.
