@@ -17,7 +17,7 @@ defmodule Mix.Tasks.GenerateStatic do
     ]
     |> Enum.each(&generate_html_for_route/1)
 
-    Process.exit(self(), :normal)
+    exit(:normal)
   end
 
   def generate_html_for_route(route_path) do
